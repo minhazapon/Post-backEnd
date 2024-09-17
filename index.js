@@ -18,11 +18,17 @@ app.use(cors())
 
 
 app.get('/', (req, res) => {
-  res.send('How To pOst request and bankEnd server')
+  res.send('How To pooost request and bankEnd server')
 })
 
 app.get('/user', (req, res) => {
   res.send(user)
+})
+
+app.post('/user', (req, res) => {
+
+   console.log(req.body)
+
 })
 
 
